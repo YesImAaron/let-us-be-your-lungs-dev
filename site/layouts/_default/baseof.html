@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <base href="{{ $.Site.BaseURL }}">
+    <title>{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ .Site.Title }}</title>
+    <meta name="author" content="{{ $.Param "author" }}">
+    <meta name="description" content="{{ $.Param "description" }}">
+    <link rel="stylesheet" href="{{ "css/styles.min.css" | relURL }}"/>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="preload" as="font" href="fonts/BuckwheatTCScript-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/BuckwheatTC-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/BuckwheatTCSans-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="fonts/BuckwheatTCSans-Painted.woff2" type="font/woff2" crossorigin="anonymous">
+  </head>
+  <body>
+    {{ partial "header" . }}
+
+    <main class="relative z-10" aria-role="main">
+      {{ block "main" . }}
+
+      {{ end }}
+    </main>
+
+    {{ partial "footer" . }}
+  <script async src="{{ "/js/scripts.min.js" | relURL }}" type="text/javascript"></script>
+  </body>
+</html>

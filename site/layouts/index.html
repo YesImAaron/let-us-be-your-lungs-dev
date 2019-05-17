@@ -1,0 +1,183 @@
+{{ define "main" }}
+  <section class="home-banner h-screen bg-periwinkle flex justify-center items-center content-center bg-cover bg-center bg-fixed relative">
+    <heading class="relative">
+        <span class="text-white">
+            {{ partial "logo" . }}
+        </span>
+    </heading>
+  </section>
+
+  <section class="bg-linen-100 text-gray-700">
+    <div class="container px-6 mx-auto pt-48 pb-64 relative">
+      <div class="bg-farm absolute inset-0 pointer-events-none"></div>
+      <div class="flex h-full justify-center items-stretch -mx-6 relative">
+        <div class="w-10/12 flex flex-wrap items-center">
+          <div class="w-full mb-12">
+            <h1 class="font-heading text-6xl text-center">The Lovercamps</h1>
+            {{ partial "divider" . }}
+          </div>
+          <div class="w-full lg:w-1/2 px-6 flex-initial">
+            <div class="bg-white p-2 shadow-lg">
+              <img src="/img/lovercamps.jpg" alt="members of the Lovercamp family">
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2 px-6 flex-initial">
+            <p class="mb-6 leading-loose">The Lovercamp family farm in rural Alma, Missouri, has been the site of many family adventures and memories and is where Steve and Amy have raised their five children, four sons, Shane, Cody, Casey, and Torrey and a daughter, Christina, and have welcomed four daughter-in-law’s, Ashley, Annie, Jessica, and Rhiannon and five grandchildren, Lucy, Claire, Ruby, Kalija, and Kane, to the family.  In addition to their children the farm has kept them busy over the years raising swine, beef cattle, and row crops of soybeans and corn.</p>
+            <p class="leading-loose">Their family, like any other farm family, has had its share of mishaps but one particular incident renewed many memories and is where their family history with PH began again.  In November 2014, Steve collapsed while working cattle with his son – a fall that would lead to a diagnosis of a specific form of PH, pulmonary arterial hypertension (PAH).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="min-h-screen w-full flex items-center justify-center bg-cover bg-center text-white" style="background-image: url('../img/chalkboard.jpg');">
+    <div class="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 px-6 text-center">
+      <h2 class="text-6xl font-painted mb-6">What is PH?</h2>
+      <p class="mb-6 leading-loose">Pulmonary hypertension (PH) is a rare, life-threatening disease affecting the arteries of the lungs that can lead to right heart failure. Let Us Be Your Lungs  was created to promote PH awareness and to raise essential funds needed to aid in research efforts.
+      </p>
+      <p class="leading-loose">We&apos;re here to bring much needed awareness of PH, and provide opportunity for fellow PH patients to share their story, an avenue for PH resources, a registration link to our fundraising initiatives and for potential donors and sponsors to learn more about PH and what Let Us Be Your Lungs PHights for.
+      </p>
+    </div>
+  </section>
+
+  <section class="min-h-screen py-48 bg-top bg-contain bg-lighten" style="background-image: url('../img/table.jpg');">
+    <div class="container h-full px-6 mx-auto relative">
+      <div class="flex flex-wrap h-full justify-center items-center -mx-6 relative">
+        <!-- <div class="w-11/12 flex justify-center flex-wrap"> -->
+
+        <div class="w-full md:w-11/12 lg:w-8/12 px-6 flex-initial">
+          <div class="overlay-header w-full mx-auto p-10 pb-20 text-white">
+            <h2 class="font-heading text-6xl text-center text-shadow">
+              Kickin Pulmonary<br>Hypertension
+              <span class="absolute top-100 left-50 translate-center text-4xl inline-flex justify-center items-center w-32 h-32 text-gray-700 text-shadow-none">5k <span class="absolute top-50 left-50 translate-center text-linen-400 w-full z-behind">{{ partial "badge" . }}</span> </span>
+            </h2>
+            <!-- {{ partial "divider" . }} -->
+          </div>
+
+          <div class="text-gray-700 text-sm bg-periwinkle-400 shadow-lg">
+
+            <div class="flex flex-wrap bg-white items-stretch lg:py-5 lg:px-5 border-dashed border-b-2 border-linen-500">
+              <div class="w-full px-10 lg:px-0 lg:w-9/12 lg:mx-auto relative py-10 pt-20">
+                <h3 class="font-heading text-center text-2xl mb-3">2019 Schedule of events</h3>
+                <span class="block mb-5 w-7/12 mx-auto text-periwinkle-400">{{ partial "divider" . }}</span>
+                <p class="leading-loose lg:text-center">Our 5th Annual 5k is returning to English Landing Park, Parkville, Missouri!  Join us to continue the fall tradition with a 3.1 mile run/walk starting and ending in front of McKeon Stage on Saturday, October 19. This event is in support of the Pulmonary Hypertension Community and in unity with Team PHenomenal Hope to bring awareness of Pulmonary Hypertension and to raise essential funds for research of new and improved medications and ultimately a CURE for PH!  The 5k race will be chip-timed, and is a USATF certified 5k/10k course, that was designed by runners for runners</p>
+              </div>
+            </div>
+
+            <div class="timeline-card hover:bg-linen-200 flex flex-wrap items-center bg-linen-200 lg:py-5 lg:pl-5 border-dashed border-b-2 border-linen-500">
+              <div class="w-full lg:w-1/3">
+                <img class="object-cover object-top h-40 w-full" src="img/registration/registration2.jpg">
+              </div>
+              <div class="py-10 lg:py-0 px-10 w-full lg:w-2/3 relative">
+                <span class="absolute top-0 right-0 p-3 inline-block bg-periwinkle-400 font-bold text-white rounded-tl-lg rounded-bl-lg">8:00am</span>
+                <h3 class="font-heading text-2xl mb-3 pr-12">Registration opens</h3>
+                <p>Registration opens, t-shirts and chip pick-up begins.</p>
+              </div>
+            </div>
+
+            <div class="timeline-card hover:bg-linen-200 flex flex-wrap items-center bg-linen-200 lg:py-5 lg:pl-5 border-dashed border-b-2 border-linen-500">
+              <div class="w-full lg:w-1/3">
+                <img class="object-cover object-top h-40 w-full" src="img/registration/registration3.jpg">
+              </div>
+              <div class="py-10 lg:py-0 px-10 w-full lg:w-2/3 relative">
+                <span class="absolute top-0 right-0 p-3 inline-block bg-periwinkle-400 font-bold text-white rounded-tl-lg rounded-bl-lg">9:30am</span>
+                <h3 class="font-heading text-2xl mb-3 pr-12">Event Kick-Off</h3>
+                <p>Registration opens, t-shirts and chip pick-up begins.</p>
+              </div>
+            </div>
+
+            <div class="timeline-card hover:bg-linen-200 flex flex-wrap items-center bg-linen-200 lg:py-5 lg:pl-5 border-dashed border-b-2 border-linen-500">
+              <div class="w-full lg:w-1/3">
+                <img class="object-cover object-top h-40 w-full" src="img/registration/registration1.jpg">
+              </div>
+              <div class="py-10 lg:py-0 px-10 w-full lg:w-2/3 relative">
+                <span class="absolute top-0 right-0 p-3 inline-block bg-periwinkle-400 font-bold text-white rounded-tl-lg rounded-bl-lg">10:00am</span>
+                <h3 class="font-heading text-2xl mb-3 pr-12">5k Race/Walk begins</h3>
+                <p>Registration opens, t-shirts and chip pick-up begins.</p>
+              </div>
+            </div>
+
+            <div class="timeline-card hover:bg-linen-200 flex flex-wrap items-center bg-linen-200 lg:py-5 lg:pl-5 border-dashed border-b-2 border-linen-500">
+              <div class="w-full lg:w-1/3">
+                <img class="object-cover object-top h-40 w-full" src="img/registration/registration4.jpg">
+              </div>
+              <div class="py-10 lg:py-0 px-10 w-full lg:w-2/3 relative">
+                <span class="absolute top-0 right-0 p-3 inline-block bg-periwinkle-400 font-bold text-white rounded-tl-lg rounded-bl-lg">11:15am</span>
+                <h3 class="font-heading text-2xl mb-3 pr-12">Presentations and Award Ceremony</h3>
+                <p>Registration opens, t-shirts and chip pick-up begins.</p>
+              </div>
+            </div>
+
+            <div class="timeline-card hover:bg-linen-200 flex flex-wrap items-center bg-linen-200 lg:py-5 lg:pl-5">
+              <div class="w-full lg:w-1/3">
+                <img class="object-cover object-top h-40 w-full" src="img/registration/registration5.jpg">
+              </div>
+              <div class="py-10 lg:py-0 px-10 w-full lg:w-2/3 relative">
+                <span class="absolute top-0 right-0 p-3 inline-block bg-periwinkle-400 font-bold text-white rounded-tl-lg rounded-bl-lg">12:00pm</span>
+                <h3 class="font-heading text-2xl mb-3 pr-12">Post-race food and beverage served</h3>
+                <p>Registration opens, t-shirts and chip pick-up begins.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="min-h-screen relative">
+    <div class="h-screen w-full">
+      <img class="object-cover object-top lg:object-center w-full h-screen" src="img/finish-line.jpg" alt="racers at the finish line a past 5k event">
+    </div>
+    <div class="w-11/12 lg:w-8/12 px-6 absolute top-100 left-50 translate-center">
+      <div class="bg-white p-24 shadow-lg text-center">
+        <div class="wysiwyg text-sm">
+          <h3 class="font-heading text-center text-2xl mb-3"></h3>
+          <span class="block mb-5 w-7/12 mx-auto text-periwinkle-400">{{ partial "divider" . }}</span>
+
+          <p class="text-grey-700 leading-loose">
+            Come out and spend the day with us at the beautiful English Landing Park!  The course  parallels the Missouri River and is the perfectopportunity to take in the gorgeous fall foliage while enjoying a beautiful October morning and support such a worthwhile cause all at the same time!. Bring your lawn chairs to place along the route to cheer on your team during the race or you can sit and visit with family, friends, and fellow PH patients and caregivers at McKeon Stage!
+          </p>
+
+          <div class="flex justify-between items-center mt-12">
+            <a class="button w-1/2 mx-6" href="#">Register</a>
+            <a class="button-outline w-1/2 mx-6" href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="bg-farm bg-farm-sm absolute inset-0 pointer-events-none"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-screen w-full bg-cover bg-fixed bg-center" style="background-image: url('img/lovercamps2.jpg');">
+    <!-- <img class="object-cover object-bottom lg:object-center w-full h-screen" src="img/amy-steve.jpg" alt="Steven and Amy Lovercamp"> -->
+  </div>
+
+  <section class="">
+
+  </section>
+
+  <section class="bg-linen-100 text-gray-700 py-8 px-8 pt-52">
+    <div class="frame py-48 border-dashed border-2 border-linen-500">
+      <div class="px-10 w-11/12 mx-auto h-full">
+        <div class="flex h-full items-center -mx-10">
+
+          <div class="w-1/2 px-10 flex-initial">
+            <div class="bg-white p-2 shadow-lg">
+              <img src="img/country-side.jpg">
+            </div>
+          </div>
+
+          <div class="w-1/2 px-10 flex-initial">
+
+              <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptates omnis saepe necessitatibus iure nostrum commodi accusantium, sunt, vel libero a facilis odit repellat atque obcaecati optio quos magnam laboriosam.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque inventore, est veniam dolore iure eius numquam. Dolorem blanditiis rerum, eaque adipisci iusto, possimus nisi illo dicta officiis ratione, dolor harum.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
